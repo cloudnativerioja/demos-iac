@@ -1,6 +1,6 @@
 # The following example shows how to issue an HTTP HEAD request.
 data "http" "example" {
-  url    = "https://cloudnativerioja.com"
+  url    = local.endpoint
   method = "GET"
 }
 

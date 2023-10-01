@@ -1,0 +1,3 @@
+locals {
+  endpoint = "cloudnativerioja.com"
+}
