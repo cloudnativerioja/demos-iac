@@ -1,6 +1,6 @@
 resource "kubernetes_deployment_v1" "example" {
   metadata {
-    name = "pod-demo"
+    name      = "pod-demo"
     namespace = "test"
     labels = {
       test = "MyExampleApp"
@@ -78,7 +78,7 @@ resource "kubernetes_deployment_v1" "example" {
 
 resource "kubernetes_service_v1" "example" {
   metadata {
-    name = "service-demo"
+    name      = "service-demo"
     namespace = "test"
   }
   spec {
@@ -99,14 +99,14 @@ resource "kubernetes_service_v1" "example" {
 
 resource "kubernetes_ingress_v1" "example_ingress" {
   metadata {
-    name = "ingress-demo"
+    name      = "ingress-demo"
     namespace = "test"
     annotations = {
-    "cert-manager.io/cluster-issuer"                   = "letsencrypt-prod"
-    "kubernetes.io/ingress.class"                      = "traefik"
-    "traefik.ingress.kubernetes.io/router.entrypoints" = "web,websecure"
-    "traefik.ingress.kubernetes.io/router.tls"         = "true"
-  }
+      "cert-manager.io/cluster-issuer"                   = "letsencrypt-prod"
+      "kubernetes.io/ingress.class"                      = "traefik"
+      "traefik.ingress.kubernetes.io/router.entrypoints" = "web,websecure"
+      "traefik.ingress.kubernetes.io/router.tls"         = "true"
+    }
   }
   spec {
     rule {

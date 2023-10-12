@@ -1,4 +1,4 @@
-output name {
+output "name" {
   value       = aws_s3_bucket.demo_bucket.id
   sensitive   = false
   description = "bucket s3 name"

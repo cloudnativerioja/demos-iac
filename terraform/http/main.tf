@@ -4,6 +4,6 @@ data "http" "example" {
   method = "GET"
 }
 
-output status_code {
-  value = "${data.http.example.status_code}"
+output "status_code" {
+  value = data.http.example.status_code
 }
