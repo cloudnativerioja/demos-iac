@@ -1,2 +1,4 @@
 bucket:
   name: "demo-bucket-1234567890"
+dynamodb:
+  name: "terraform-state-lock"
