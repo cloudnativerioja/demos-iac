@@ -7,3 +7,7 @@ data "http" "example" {
 output "status_code" {
   value = data.http.example.status_code
 }
+
+output "body" {
+  value = data.http.example.body
+}
