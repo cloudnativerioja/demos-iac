@@ -1,3 +1,3 @@
 locals {
-  endpoint = "cloudnativerioja.com"
+  endpoint = "https://cloudnativerioja.com"
 }
